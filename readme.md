@@ -7,7 +7,13 @@
 To inject child
 -to add child inside element use appendChild {refer line 16, index.html}
 
-@ Higher order function =
+Everything in JS happens inside execution context
+
+- execution context = big container where all js code is executed
+
+- Js is a synchronous single thread language.
+
+-when a js code runs execution context is created
 
 # React
 
@@ -227,6 +233,39 @@ resData?.card?.card?.info;
 - whenever looping is done on a component then key need to give. like above we use map so give key.
 
 - not using key (not acceptable ) >>>>>>>>>>>> using index as a key (if backend didn't provide unique key) >>>>>>>>>>>> using id(best practice)
+
+@ Export = two type of export,
+1.default export = only export one => export default resList; => import resList from "../utils/mockData";
+2.named export = when multiple export needed. =>export const CDN_URL ="" => import { CDN_URL } from "../utils/constant";
+
+@React Hooks
+
+- normal javaScript utility function
+- pre-build functions given by react
+- -useState() - super powerful state variable
+  -useEffect()
+
+- whenever state variable changes react rerender the component.
+
+- rerendering = re updating the page
+
+- React keeps the data layer in sync with the UI layer
+
+-
+
+- react is fast because its good at DOM operation.
+
+- component name can be Component.js or Component.jsx or Component.tsx
+
+- when import use we can give file name with or without extension, below both are same
+
+import Header from "./component/Header" or import Header from "./component/Header.js"
+
+- Never ever use any hard coded data in component folder, keep separate
+
+- path in the same folder hierarchy use ./Component.js
+
+- path in different folder hierarchy use ../Component.js
 
 # mindset before creating an web app
 
